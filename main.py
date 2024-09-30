@@ -66,3 +66,47 @@
 # print(len(list(range(0,100,7))))
 #
 #
+# 1. Susikurkite list vardams saugoti ir užpildykite jį informacija. Išveskite visą
+# šį list, tuomet pirmą narį iš jo, paskutinį narį, bei kiek narių jame yra.
+# vardai = ["Gintaras", "Augis", "Stelmokas", "Vidas", "Kristina", "Aiste"]
+# print(vardai)
+# print(vardai[0])
+# print(vardai[-1])
+# print(len(list(vardai)))
+
+
+# 2. Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
+# Išveskite viso šio list duomenis bei kiek ūgių turite.
+# ugis = [1.75, 1.45, 1.55, 1.83]
+# print(ugis)
+# print(len(list(ugis)))
+
+
+# 3. Susikurkite list pažymiams saugoti. Pamėginkite sukurti programą, kur
+# vartotojas galėtų suvesti norimą kiekį naujų duomenų. Galiausiai išveskite
+# visus pažymius ir jų kiekį.
+
+# pazymiai = [1,5,7,9,4]
+# print("Iveskite 3 naujus pazymius")
+# sk1 = int(input("Iveskite pazymi\n"))
+# sk2 = int(input("Iveskite pazymi\n"))
+# sk3 = int(input("Iveskite pazymi\n"))
+# pazymiai.extend([sk1, sk2, sk3])
+# print(pazymiai)
+# print(len(list(pazymiai)))
+
+# 4. Susikurkite miestų sąrašą. Į šį list pridėkite duomenų kurdami patį list.
+# Toliau sukurkite galimybę vartotojui papildyti list. Išveskite tiek pradinį list,
+# tiek papildytą duomenimis. Pamėginkite papildyti programą, kad
+# vartotojas galėtų pasirinkti į kurią list vietą būtų įrašytas naujas miestas.
+
+miestai = ["Vilnius", "Moscow", "Ryga", "Amsterdam", "Paris"]
+print(miestai)
+
+
+
+
+# 5. Sukurkite pasirinktą list ir užpildykite jį duomenimis. Iš jo pašalinkite
+# keletą įrašų, tiesiog parašant pop() funkciją. Taip pat, sukurkite, kad
+# vartotojas galėtų pasirinkti kiek dar duomenų pašalinti ir pašalinkite iš list
+# pasirinktą kiekį įrašų.
