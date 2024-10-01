@@ -73,7 +73,9 @@
 # print(vardai[0])
 # print(vardai[-1])
 # print(len(list(vardai)))
-
+# import random
+# from audioop import reverse
+# from re import search
 
 # 2. Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
 # Išveskite viso šio list duomenis bei kiek ūgių turite.
@@ -100,13 +102,102 @@
 # tiek papildytą duomenimis. Pamėginkite papildyti programą, kad
 # vartotojas galėtų pasirinkti į kurią list vietą būtų įrašytas naujas miestas.
 
-miestai = ["Vilnius", "Moscow", "Ryga", "Amsterdam", "Paris"]
-print(miestai)
-
-
+# miestai = ["Vilnius", "Moscow", "Ryga", "Amsterdam", "Paris"]
+# print(miestai)
+# miest1 = input("Iveskite bent koki norima miesta\n")
+# pasirinkimas = input("kur noretumete, kad sistema ikeltu jusu ivestus duomenis (prieky - 1, gale - 2)\n")
+# if pasirinkimas == 1:
+#     miestai.append(miest1)
+#     print(miestai)
+#     if pasirinkimas == 2:
+#         miestai.extend([miest1])
+#         print(miestai)
 
 
 # 5. Sukurkite pasirinktą list ir užpildykite jį duomenimis. Iš jo pašalinkite
 # keletą įrašų, tiesiog parašant pop() funkciją. Taip pat, sukurkite, kad
 # vartotojas galėtų pasirinkti kiek dar duomenų pašalinti ir pašalinkite iš list
 # pasirinktą kiekį įrašų.
+
+# list1 = ['geltoni', 'krantai', 'jūros', 'begalybėj']
+# print(list1)
+# quant = int(input('Kiek dar narių pašalint: '))
+#
+# if quant < len(list1):
+#     for term in range(quant):
+#         list1.pop(random.randint(0, len(list1) - 1))
+# else:
+#     print('Nebėra ką šalinti, sąrašas tuščias')
+#     quant = len(list1)
+#     for term in range(quant):
+#         list1.pop(random.randint(0, len(list1)) - 1)
+# print(list1)
+
+# 6. Sukurkite list su pasirinktais duomenimis. Patikrinkite ar sąraše yra
+# daugiau nei 5 įrašai ir jeigu taip - jį išvalykite (clear funkcija).
+# list1 = [5, 3, 6, 7, 8, 9]
+# print(len(list(list1)))
+# if len(list(list1)) > 5:
+#     list1.clear()
+#     print(list1)
+
+
+
+
+# 7. Sukurkite list, kuriame būtų surašyti bet kokie žodžiai. Leiskite vartotojui
+# atlikti paiešką tame sąraše - vartotojas įvestų norimą žodį ir programa
+# pasakytų ar tame sąraše tas žodis yra ir jeigu yra, tai kurioje vietoje.
+
+# list1 = ["vaikas", "bernas", "moliugas", "astronautas"]
+# paieska = input("Iveskite zodi, kurio norite ieskoti\n")
+# if paieska in list1:
+#     index = list1.index(paieska)
+#     print(f"Žodis '{paieska}' yra sarase, jo indeksas: {index}")
+# else:
+#     print(f"Žodis '{paieska}' nera sarase")
+
+
+# 8. Sukurkite sąrašą, kuriame būtų surašyti studentų pažymiai. Galite
+# padaryti taip, kad pasirinktą kiekį pažymių galėtų suvesti pats vartotojas.
+# Programa turi pasakyti kiek dešimtukų studentas turi.
+
+
+# list1 = [5, 8, 10, 9, 7, 3]
+# print(list1)
+# skaiciav = list1.count(10)
+# print(f"pazymys 10 pasikartoja - {skaiciav} karta(-us)")
+
+# 9. Susikurkite automobilių markių sąrašą ir užpildykite jį duomenimis
+# (kuriantis sąrašą arba su vartotojo įvestimi). Išveskite turimus duomenis
+# ekrane. Tuomet surikiuokite automobilių markes didėjimo tvarka ir
+# išveskite. Taip pat, surikiuokite mažėjimo tvarka ir išveskite.
+# auto = ["BMW", "MERCEDES-BENZ", "VW", "VOLVO"]
+# print(auto)
+# auto.sort()
+# print(f"Sortiruote didejimo tvarka atrodo taip: {auto}")
+# auto.sort(reverse = True)
+# print(f"Sortiruote mazejimo tvarka atrodo taip: {auto}")
+
+
+
+# 10.Susikurkite studento pažymių sąrašą ir užpildykite duomenimis. Išveskite
+# tris didžiausius turimus pažymius.
+
+# list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# didz = sorted(list1, reverse=True)[:3]
+# print(f"3 didziausi gauti pazymiai: {didz}")
+
+
+# 11.Susikurkite studentų pažymių sąrašą ir užpildykite duomenimis. Jeigu
+# studentas turi neigiamų pažymių (1, 2, 3, arba 4), išveskite kiek tokių
+# pažymių jis turi.
+
+studentai = ["Jonas:", [1, 2, 8, 6, 7],
+"Valdemaras:", [5, 8, 1, 3, 4],
+"Oskaras:", [2, 3, 4, 8],
+"Diana:", [4, 5, 6, 7]
+]
+if studentai <= 4:
+    print(f"Studentai {studentai} turi neigiamu pazymiu: ")
+
+
