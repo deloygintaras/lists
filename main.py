@@ -192,7 +192,8 @@
 # studentas turi neigiamų pažymių (1, 2, 3, arba 4), išveskite kiek tokių
 # pažymių jis turi.
 
-studentai = ["Jonas:", [1, 2, 8, 6, 7],
+studentai = [
+"Jonas:", [1, 2, 8, 6, 7],
 "Valdemaras:", [5, 8, 1, 3, 4],
 "Oskaras:", [2, 3, 4, 8],
 "Diana:", [4, 5, 6, 7]
@@ -201,3 +202,96 @@ if studentai <= 4:
     print(f"Studentai {studentai} turi neigiamu pazymiu: ")
 
 
+
+# 12.Susikurkite pasirinktą sąrašą su duomenimis. Pritaikykite list slicing tokiais
+# būdais ir gautus atsakymus išveskite:
+# 1. Paimkite pirmus tris narius.
+# 2. Paimkite du narius, pradedant trečiu.
+# 3. Paimkite paskutinius keturis narius.
+# 4. Paimkite kas antrą narį, pradedant trečiu nariu.
+# 5. Paimkite visus atbuline tvarka.
+
+
+
+
+
+# 13.Susikurkite list studentų vidurkiams saugoti. Išsitraukite ir pasidėkite į
+# atskirą list tris didžiausius pažymius (galite surikiuoti ir išsikirpti ką reikia).
+
+
+
+
+
+
+# 14.Pamėginkite sukurti žodžių žodyną. Šį žodyną turėtų užpildyti vartotojas,
+# įvesdamas visus norimus žodžius. Po kiekvieno įvedimo jam turėtų būti
+# parodomi visi žodžiai, tačiau surikiuoti, t.y. įdėjus žodį į sąrašą, jį
+# surikiuokite iš naujo.
+
+
+
+
+
+# 15.Sukurkite sąrašą, kuriame saugotumėte sandėlio likučius. Į atskirą sąrašą
+# persikelkite visus likučius kurių lieka mažai (mažiau nei 5 vnt. arba trijų
+# prekių likučius, kurių likę mažiausiai).
+
+
+
+
+
+# 16.Susikurkite norimą sąrašą su duomenimis. Išveskite šį sąrašą šiais
+# pavidalais:
+# 1. Kiekvieną elementą atskirant kableliu ir tarpu: pirmas, antras, trečias, ...
+# 2. Kiekvieną elementą atskiriant vertikaliu brūkšneliu: pirmas|antras|trečias|...
+# 3. Kiekvieną elementą atskiriant tarpu: pirmas antras trečias
+
+
+
+
+
+# 17.Pabandykite atlikti list unpacking. Sąraše sudėkite informaciją ir iškart
+# padarykite list unpacking. Tai atlikus išsiveskite gautas reikšmes.
+# Pavyzdžiui, sąraše galėtų būti taip pateikta informacija:
+# 1. pirmoje vietoje - naudojama programavimo kalba
+# 2. antroje vietoje - aplinka (desktop, web, ...)
+# 3. likusiose vietose nuo trečios - failai, su kuriais būtų dirbama
+
+
+# 18.Susikurkite sąrašą projekto komandos narių vardams ir pavardėms
+# saugoti. Išveskite tekstą "prie projekto dirba šie komandos nariai:" ir iškart
+# po to kiekvieną komandos narį atskiroje eilutėje.
+
+
+
+
+
+# 19.Susikurkite sąrašą, kuriame būtų saugomos jau praeitos Python temos.
+# Išveskite tekstą "mes jau mokėmės:". Ir iškart po to atskirose eilutėse
+# visas temas, tačiau jas sunumeruokite "1-a tema:", "2-a tema:" ir t.t. Tai
+# pamėginkite atlikti tiek su for ciklu, tiek su while ciklu.
+
+
+
+
+
+# 20.Susikurkite masyvą studijų programų pavadinimams saugoti. Užpildykite
+# šį masyvą duomenimis. Išveskite kiekvieną studijų programą atskiroje
+# eilutėje.
+
+
+
+# 21.Susikurkite masyvą šalių pavadinimams saugoti ir jį užpildykite
+# duomenimis. Išveskite šalių pavadinimus atskirose eilutėse, su prierašu
+# "šalis" ir tada nurodant šalį iš masyvo.
+
+# 22.Susikurkite sąrašą prekių krepšeliui saugoti. Išveskite kiek prekių
+# krepšelyje yra narių. Tuomet išveskite visą prekių krepšelio informaciją,
+# nurodant kelinta prekė, pvz "nr 1 pirkinys:", "nr 2 pirkinys:" ir t.t.
+
+
+
+# 23.Susikurkite pažymių sąrašą ir užpildykite jį informacija. Surikiuokite
+# pažymius nuo didžiausio iki mažiausio. Išveskite visus turimus pažymius
+# atskirose eilutėse. Prie kiekvieno pažymio taip pat prirašykite "puikiai",
+# jeigu jis yra 10, "labai gerai", jeigu jis yra 9 ir t.t.
