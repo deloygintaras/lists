@@ -192,16 +192,22 @@
 # studentas turi neigiamų pažymių (1, 2, 3, arba 4), išveskite kiek tokių
 # pažymių jis turi.
 
-studentai = [
-"Jonas:", [1, 2, 8, 6, 7],
-"Valdemaras:", [5, 8, 1, 3, 4],
-"Oskaras:", [2, 3, 4, 8],
-"Diana:", [4, 5, 6, 7]
-]
-if studentai <= 4:
-    print(f"Studentai {studentai} turi neigiamu pazymiu: ")
-
-
+# Studentų pazymiu sarasas
+# studentai = [
+#     ["Jonas", 1, 2, 8, 6, 7],
+#     ["Valdemaras", 5, 8, 1, 3, 4],
+#     ["Oskaras", 2, 3, 4, 8],
+#     ["Diana", 4, 5, 6, 7]
+# ]
+#
+# # Patikriname kiekvieno studento pazymius
+# for studentas in studentai:
+#     vardas = studentas[0]  # Pirmas elementas - studento vardas
+#     pazymiai = studentas[1:]  # Nuo antro elemento - pazymiu pradzia
+#     neigiamu_sk = sum(1 for pazymys in pazymiai if pazymys < 5)  # skaiciuojame neigiamus pazymius
+#
+#     # isvedame rezultata studentui
+#     print(f"{vardas} turi neigiamų pažymių: {neigiamu_sk}")
 
 # 12.Susikurkite pasirinktą sąrašą su duomenimis. Pritaikykite list slicing tokiais
 # būdais ir gautus atsakymus išveskite:
@@ -210,23 +216,28 @@ if studentai <= 4:
 # 3. Paimkite paskutinius keturis narius.
 # 4. Paimkite kas antrą narį, pradedant trečiu nariu.
 # 5. Paimkite visus atbuline tvarka.
-
-
-
+# pazymiai = [8, 9, 13, 5, 8, 9, 11, 12, 88, 47]
+# print(pazymiai[0:3])
+# print(pazymiai[2:4])
+# print(pazymiai[-4:])
+# print(pazymiai[2::2])
+# print(pazymiai[::-1])
 
 
 # 13.Susikurkite list studentų vidurkiams saugoti. Išsitraukite ir pasidėkite į
 # atskirą list tris didžiausius pažymius (galite surikiuoti ir išsikirpti ką reikia).
 
-
-
-
+# paz = [3, 5, 8, 6, 4, 7, 9]
+# paz1 = paz
+# print(sorted(paz1)[-3:])
 
 
 # 14.Pamėginkite sukurti žodžių žodyną. Šį žodyną turėtų užpildyti vartotojas,
 # įvesdamas visus norimus žodžius. Po kiekvieno įvedimo jam turėtų būti
 # parodomi visi žodžiai, tačiau surikiuoti, t.y. įdėjus žodį į sąrašą, jį
 # surikiuokite iš naujo.
+
+
 
 
 
