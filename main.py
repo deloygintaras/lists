@@ -77,7 +77,9 @@
 # from audioop import reverse
 # from re import search
 # from audioop import reverse
+
 from idlelib.replace import replace
+from random import random
 
 # 2. Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
 # Išveskite viso šio list duomenis bei kiek ūgių turite.
@@ -397,8 +399,16 @@ from idlelib.replace import replace
 # skaičius ekrane. Tuomet tuos pačius skaičius išveskite ekrane dar kartą,
 # tačiau viską spausdinkite atskirose eilutėse, eilutėje nurodant patį skaičių
 # ir jo kvadratą.
-
-
+# import random
+#
+# kiek = int(input("Kiek atsitiktiniu skaiciu turi buti sugeneruota? "))
+# sk = []
+# for skaiciai in range(kiek):
+#     sk.append(random.randint(1, 100))
+# print(sk)
+# print("Skaiciai ir ju kvadratai:")
+# for skaicius in sk:
+#     print(f"{skaicius}: {skaicius**2}")
 
 
 
@@ -406,9 +416,12 @@ from idlelib.replace import replace
 # informaciją. Pakeiskite trijų pasirinktų narių reikšmes į kitas. Išsiveskite
 # pakeisto sąrašo informaciją.
 
-
-
-
+# sarasas = [5, 14, 88, 47, 25, 16, 91, 97, 0]
+# print(sarasas)
+# sarasas[1] = 77
+# sarasas[4] = 36
+# sarasas[0] = 55
+# print(sarasas)
 
 
 # 26.Susikurkite sąrašą ir jį užpildykite skaičiais (savarankiškai arba
@@ -416,8 +429,30 @@ from idlelib.replace import replace
 # skaičius. Tuomet išveskite tekstą "visi nelyginiai skaičiai" ir visus nelyginius
 # skaičius. Bei ant galo tekstą "visi skaičiai, kurie dalinasi iš 3" ir visus
 # skaičius, kurie atitinka tokią sąlygą.
-
-
+# import random
+#
+# # Sukuriame sąrašą su atsitiktiniais skaičiais
+# sarasas = [5, 3, 45, 4, 9, 15, 25, 20]
+#
+# # Sąrašai lyginiams, nelyginiams ir skaičiams, kurie dalijasi iš 3
+# lyginiai = []
+# nelyginiai = []
+# dalis = []
+#
+# # Peržiūrime kiekvieną skaičių sąraše
+# for i in sarasas:
+#     if i % 2 == 0:
+#         lyginiai.append(i)
+#     else:
+#         nelyginiai.append(i)
+#
+#     if i % 3 == 0:
+#         dalis.append(i)
+#
+# # Išvedame rezultatus
+# print("Lyginiai skaičiai:", lyginiai)
+# print("Nelyginiai skaičiai:", nelyginiai)
+# print("Visi skaičiai, kurie dalinasi iš 3:", dalis)
 
 
 # 27.Susikurkite sąrašą ir jį užpildykite atsitiktiniais skaičiais. Išveskite visus
