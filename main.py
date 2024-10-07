@@ -76,6 +76,7 @@
 # import random
 # from audioop import reverse
 # from re import search
+from idlelib.replace import replace
 
 # 2. Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
 # Išveskite viso šio list duomenis bei kiek ūgių turite.
@@ -237,18 +238,27 @@
 # parodomi visi žodžiai, tačiau surikiuoti, t.y. įdėjus žodį į sąrašą, jį
 # surikiuokite iš naujo.
 
-
-
-
-
+# zodziai = input("Sukurkite zodziu zodyna, iveskite asmeniskai: ")
+# zodziai_list = zodziai.split()
+# zodziai_list.sort()
+# print("Surikiuoti zodziai:", zodziai_list)
 
 
 # 15.Sukurkite sąrašą, kuriame saugotumėte sandėlio likučius. Į atskirą sąrašą
 # persikelkite visus likučius kurių lieka mažai (mažiau nei 5 vnt. arba trijų
 # prekių likučius, kurių likę mažiausiai).
 
-
-
+# sarasas = [
+#     ["plyteles:", 45],
+#     ["ausines:", 14],
+#     ["kopecios:", 4],
+#     ["klijai:", 88],
+# ]
+# mazai =[]
+# for preke, likutis in sarasas:
+#     if likutis < 5:
+#         mazai.append(preke)
+# print(f"Prekes, kuriu likuciai mazesni nei 5: {mazai}")
 
 
 # 16.Susikurkite norimą sąrašą su duomenimis. Išveskite šį sąrašą šiais
@@ -256,9 +266,11 @@
 # 1. Kiekvieną elementą atskirant kableliu ir tarpu: pirmas, antras, trečias, ...
 # 2. Kiekvieną elementą atskiriant vertikaliu brūkšneliu: pirmas|antras|trečias|...
 # 3. Kiekvieną elementą atskiriant tarpu: pirmas antras trečias
-
-
-
+#
+# listas = ["ananasas", "kirminas", "astunkojis", "dvejetas"]
+# print(', '.join(listas))
+# print('|'.join(listas))
+# print(' '.join(listas))
 
 
 # 17.Pabandykite atlikti list unpacking. Sąraše sudėkite informaciją ir iškart
@@ -268,13 +280,24 @@
 # 2. antroje vietoje - aplinka (desktop, web, ...)
 # 3. likusiose vietose nuo trečios - failai, su kuriais būtų dirbama
 
+# info = ["Python", "Desktop", "main.py", "README.md", "python.txt"]
+#
+# progkalba, aplinka, *failai = info
+#
+# print("Naudojama programavimo kalba:", progkalba)
+# print("Aplinka:", aplinka)
+# print("Failai, su kuriais dirbama:", failai)
+
+
 
 # 18.Susikurkite sąrašą projekto komandos narių vardams ir pavardėms
 # saugoti. Išveskite tekstą "prie projekto dirba šie komandos nariai:" ir iškart
 # po to kiekvieną komandos narį atskiroje eilutėje.
-
-
-
+# var = 0
+# varpav = ["Gintaras Kanskus", "Vardemaras Plato", "Vaizgantas Strazdunas", "Algimantas Bezdnus", "Natalija Volkina"]
+# while var < len(varpav):
+#     print(f"Prie projekto dirba sie komandos nariai: {var}: {varpav[var]}")
+#     var += 1
 
 
 # 19.Susikurkite sąrašą, kuriame būtų saugomos jau praeitos Python temos.
@@ -282,19 +305,48 @@
 # visas temas, tačiau jas sunumeruokite "1-a tema:", "2-a tema:" ir t.t. Tai
 # pamėginkite atlikti tiek su for ciklu, tiek su while ciklu.
 
-
+# sarasas = [
+#     "Python",
+#     "IF",
+#     "WHILE",
+#     "Cycle",
+#     "FOR"
+# ]
+# indeksas = 0
+# while indeksas < len(sarasas):
+#     print(f"Mes jau mokemes:",indeksas, sarasas[indeksas])
+#     indeksas += 1
 
 
 
 # 20.Susikurkite masyvą studijų programų pavadinimams saugoti. Užpildykite
 # šį masyvą duomenimis. Išveskite kiekvieną studijų programą atskiroje
 # eilutėje.
-
+# studijos = [
+#     "Chemija",
+#     "Matematika",
+#     "Medicina",
+#     "Fizika",
+#     "Kosmetine chemija",
+#     "Ekonomika",
+#     "Ekologija",
+#     "Biofizika",
+#     "Biochemija"
+# ]
+# indeksas = 0
+# print("Pasirinktinos studiju programos:")
+# while indeksas < len(studijos):
+#     print(f"Studiju programa:", indeksas, studijos[indeksas])
+#     indeksas += 1
 
 
 # 21.Susikurkite masyvą šalių pavadinimams saugoti ir jį užpildykite
 # duomenimis. Išveskite šalių pavadinimus atskirose eilutėse, su prierašu
 # "šalis" ir tada nurodant šalį iš masyvo.
+
+
+
+
 
 # 22.Susikurkite sąrašą prekių krepšeliui saugoti. Išveskite kiek prekių
 # krepšelyje yra narių. Tuomet išveskite visą prekių krepšelio informaciją,
